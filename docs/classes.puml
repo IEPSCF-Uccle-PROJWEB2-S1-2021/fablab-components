@@ -4,7 +4,7 @@ class Item {
   -description
 }
 class Container {
-  -local
+  -location
   -drawer
   -id
 }

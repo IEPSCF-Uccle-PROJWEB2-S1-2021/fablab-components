@@ -34,6 +34,8 @@ Enfin, au fur et à mesure qu'ils seront utilisés dans les projets, les composa
 
 ## Use cases
 
+![Use cases](../out/docs/use_cases/usecases.svg)
+
 ## Navigation
 
 ## Classes

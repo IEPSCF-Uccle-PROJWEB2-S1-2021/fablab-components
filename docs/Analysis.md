@@ -53,3 +53,5 @@ Les listes auront un formulaire de filtrage pour limiter la liste aux éléments
 Les formulaires, une fois soumis, affiche un nouveau formulaire vide afin de faciliter l'encodage en série.
 
 ## Classes
+
+![Diagramme de classes](../out/docs/classes/classes.svg)

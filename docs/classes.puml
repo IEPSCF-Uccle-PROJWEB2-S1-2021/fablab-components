@@ -1,3 +1,13 @@
 @startuml classes
-class Item
+class Catalog
+class Item {
+  -description
+}
+class ContainerQ
+class ItemInventory {
+  -quantity
+}
+Catalog *-- Item
+Container o-- ItemInventory
+ItemInventory -- Item
 @enduml

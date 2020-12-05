@@ -5,11 +5,15 @@
   <form action="/containers" method="post">
     <div class="mb-3">
       <label for="locationInput" class="form-label">Local</label>
-      <input type="text" name="location" required class="form-control" id="locationInput">
+      <input type="text" name="location" list="locationOptions" required class="form-control" id="locationInput">
+      <datalist id="locationOptions">
+      </datalist>
     </div>
     <div class="mb-3">
       <label for="drawerInput" class="form-label">Armoire</label>
       <input type="text" name="drawer" required class="form-control" id="drawerInput">
+      <datalist id="drawerOptions">
+      </datalist>
     </div>
     <div class="mb-3">
       <label for="idInput" class="form-label">Identifiant</label>

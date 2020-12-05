@@ -28,7 +28,7 @@ router.post(
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return next(createError(404));
-    };
+    }
     const location = req.body.location;
     const drawer = req.body.drawer;
     const id = req.body.id;
@@ -38,5 +38,29 @@ router.post(
     res.redirect('/containers/new');
   }
 );
+
+router.get('/locations', (req, res, next) => {
+  const allLocations = containers.map((container) => container.location);
+  const uniqueLocations = [];
+  allLocations.forEach((location) => {
+    if (uniqueLocations.indexOf(location) < 0) {
+      uniqueLocations.push(location);
+    }
+  });
+  uniqueLocations.sort();
+  res.json(uniqueLocations);
+});
+
+router.get('/drawers', (req, res, next) => {
+  const allDrawers = containers.map((container) => container.drawer);
+  const uniqueDrawers = [];
+  allDrawers.forEach((drawer) => {
+    if (uniqueDrawers.indexOf(drawer) < 0) {
+      uniqueDrawers.push(drawer);
+    }
+  });
+  uniqueDrawers.sort();
+  res.json(uniqueDrawers);
+});
 
 module.exports = router;

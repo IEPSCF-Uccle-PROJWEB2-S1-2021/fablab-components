@@ -3,7 +3,11 @@ class Catalog
 class Item {
   -description
 }
-class ContainerQ
+class Container {
+  -local
+  -drawer
+  -id
+}
 class ItemInventory {
   -quantity
 }

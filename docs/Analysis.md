@@ -36,6 +36,13 @@ Enfin, au fur et à mesure qu'ils seront utilisés dans les projets, les composa
 
 ![Use cases](../out/docs/use_cases/usecases.svg)
 
+Un seul acteur est identifié : le FabLab manager.
+Il n'y a donc probablement pas besoin d'une gestion d'utilisateur.
+Si l'application n'est pas accessible depuis l'extérieur, une authentification est également superflue.
+
+Au niveau de la gestion du projet, UC1 et UC2 seront les premiers à réaliser car ils ne dépendent pas d'autres use cases.
+UC3, UC4 et UC5 auront certainenement une base commune pour l'affichage de l'information.
+
 ## Navigation
 
 ## Classes

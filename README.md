@@ -11,3 +11,11 @@
 * `package.json` : raccourcis de démarrage, liste des dépendances du projet
 
 Le reste des fichiers sont des fichiers de configuration pour faciliter l'édition.
+
+## Progression
+
+* [x] UC1: Encoder un nouvel article
+* [ ] UC2: Enregistrer un conteneur
+* [ ] UC3: Rechercher un article
+* [ ] UC4: Rechercher un conteneur
+* [ ] UC5: Modifier l'inventaire d'un conteneur

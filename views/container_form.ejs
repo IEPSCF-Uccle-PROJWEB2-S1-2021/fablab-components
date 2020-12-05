@@ -1,0 +1,24 @@
+<%- include('header'); -%>
+
+<div class="container">
+  <h1><%= title %></h1>
+  <form action="/containers" method="post">
+    <div class="mb-3">
+      <label for="locationInput" class="form-label">Local</label>
+      <input type="text" name="location" required class="form-control" id="locationInput">
+    </div>
+    <div class="mb-3">
+      <label for="drawerInput" class="form-label">Armoire</label>
+      <input type="text" name="drawer" required class="form-control" id="drawerInput">
+    </div>
+    <div class="mb-3">
+      <label for="idInput" class="form-label">Identifiant</label>
+      <input type="text" name="id" required class="form-control" id="idInput">
+    </div>
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary">Ajouter au catalogue</button>
+    </div>
+  </form>
+</div>
+
+<%- include('footer') -%>

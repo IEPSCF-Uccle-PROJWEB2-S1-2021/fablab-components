@@ -1,0 +1,21 @@
+@startdot navigation
+digraph g {
+  graph [rankdir=LR,
+         ranksep=1];
+  node [shape = note];
+
+  home [label="Page d'accueil"];
+  component_form [label="Formulaire composant"];
+  container_form [label="Formulaire conteneur"];
+  component_list [label="Liste composants"];
+  container_list [label="Liste conteneurs"];
+  inventory_details [label="Détails inventaire"];
+
+  home -> component_form;
+  home -> container_form;
+  home -> component_list;
+  home -> container_list;
+  component_list -> inventory_details;
+  container_list -> inventory_details;
+}
+@enddot

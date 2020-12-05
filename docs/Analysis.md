@@ -45,4 +45,11 @@ UC3, UC4 et UC5 auront certainenement une base commune pour l'affichage de l'inf
 
 ## Navigation
 
+![Schéma de navigation](../out/docs/navigation/navigation.svg)
+
+L'application aura une barre de navigation pour aller d'une page à l'autre.
+Les listes auront un formulaire de filtrage pour limiter la liste aux éléments recherchés.
+
+Les formulaires, une fois soumis, affiche un nouveau formulaire vide afin de faciliter l'encodage en série.Q
+
 ## Classes

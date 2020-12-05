@@ -23,6 +23,15 @@ Le rangement doit permettre de répondre à plusieurs questions.
   Et j'y ai déjà travaillé suffisamment longtemps pour savoir que dans un lieu comme le FabLab, tout le monde se sert, mais tout le monde ne range pas.
   Je devrai donc être capable de régulièrement et facilement tout remettre à sa place, conteneurs comme composants.
 
+![Local - armoire - conteneur](local-armoire-conteneur.png)
+
+Les composants vont être livré au CLICK.
+Le FabLab Manager devra alors les encoder dans le catalogue s'il s'agit de nouveaux composants.
+Il devra ensuite leur trouver une place dans l'un des conteneur.A
+Enfin, au fur et à mesure qu'ils seront utilisés dans les projets, les composants sortiront de l'inventaire.
+
+![Flux des composants](flux.png)
+
 ## Use cases
 
 ## Navigation

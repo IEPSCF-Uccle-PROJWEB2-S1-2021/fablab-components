@@ -4,9 +4,9 @@ left to right direction
 actor "FabLab manager" as manager
 
 rectangle "fablab-components" {
-  (UC1: Encoder un nouveau composant) as UC1
+  (UC1: Encoder un nouvel article) as UC1
   (UC2: Enregistrer un conteneur) as UC2
-  (UC3: Rechercher un composant) as UC3
+  (UC3: Rechercher un article) as UC3
   (UC4: Rechercher un conteneur) as UC4
   (UC5: Modifier l'inventaire d'un conteneur) as UC5
 }

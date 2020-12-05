@@ -5,32 +5,32 @@
 L'Université de Mons héberge une structure que nous avons appelé "Le CLICK".
 Cette structure fournit différents services pour aider les entreprises et porteurs de projets innovants.
 Afin de réaliser des prototypes, nous y avons créé un FabLab, c'est-à-dire un atelier ouvert au public où chacun et chacune peut utiliser différentes machines de fabrication numérique.
-Le FabLab possède son atelier IoT qui possède une réserve de composants : microcontrôleurs, capteurs et autres éléments électroniques.
+Le FabLab possède son atelier IoT qui possède une réserve d'articles : microcontrôleurs, capteurs et autres éléments électroniques.
 Se pose donc la question du rangement.
 
 Le rangement doit permettre de répondre à plusieurs questions.
 
 - Qu'est-ce que j'ai en stock ?
-  Quelles sont les références de composants que je peux utiliser dans mes projets ou proposer à mes visiteurs ?
+  Quelles sont les références d'articles que je peux utiliser dans mes projets ou proposer à mes visiteurs ?
 - Combien m'en reste-t-il ?
   Est-ce que j'ai assez d'éléments pour réaliser mon projet ?
   Est-ce que je dois en recommander lors de ma prochaine commande ?
 - Où est-ce que ça se trouve ?
-  Idéalement, je dois pouvoir localiser chaque composant en moins de 30 secondes.
+  Idéalement, je dois pouvoir localiser chaque article en moins de 30 secondes.
   Or, le FabLab s'étend sur plusieurs pièces.
   Chaque pièce contient plusieurs armoires.
   Chaque armoire, plusieurs compartiments, boîtes ou autres conteneurs.
   Et j'y ai déjà travaillé suffisamment longtemps pour savoir que dans un lieu comme le FabLab, tout le monde se sert, mais tout le monde ne range pas.
-  Je devrai donc être capable de régulièrement et facilement tout remettre à sa place, conteneurs comme composants.
+  Je devrai donc être capable de régulièrement et facilement tout remettre à sa place, conteneurs comme articles.
 
 ![Local - armoire - conteneur](local-armoire-conteneur.png)
 
-Les composants vont être livré au CLICK.
-Le FabLab Manager devra alors les encoder dans le catalogue s'il s'agit de nouveaux composants.
+Les articles vont être livrés au CLICK.
+Le FabLab Manager devra alors les encoder dans le catalogue s'il s'agit de nouveaux articles.
 Il devra ensuite leur trouver une place dans l'un des conteneur.A
-Enfin, au fur et à mesure qu'ils seront utilisés dans les projets, les composants sortiront de l'inventaire.
+Enfin, au fur et à mesure qu'ils seront utilisés dans les projets, les articles sortiront de l'inventaire.
 
-![Flux des composants](flux.png)
+![Flux des articles](flux.png)
 
 ## Use cases
 
@@ -50,6 +50,6 @@ UC3, UC4 et UC5 auront certainenement une base commune pour l'affichage de l'inf
 L'application aura une barre de navigation pour aller d'une page à l'autre.
 Les listes auront un formulaire de filtrage pour limiter la liste aux éléments recherchés.
 
-Les formulaires, une fois soumis, affiche un nouveau formulaire vide afin de faciliter l'encodage en série.Q
+Les formulaires, une fois soumis, affiche un nouveau formulaire vide afin de faciliter l'encodage en série.
 
 ## Classes

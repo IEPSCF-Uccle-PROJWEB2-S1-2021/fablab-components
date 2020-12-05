@@ -1,4 +1,4 @@
-# Express-ejs-template
+# fablab-components
 
 Steps to reproduce:
 

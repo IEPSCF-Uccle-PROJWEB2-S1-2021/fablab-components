@@ -14,7 +14,7 @@
         "runtimeExecutable": "nodemon",
         "env": {
           "NODE_ENV": "development",
-          "DEBUG": "express-ejs-template:*"
+          "DEBUG": "fablab-components:*"
         },
         "skipFiles": [
           "<node_internals>/**"

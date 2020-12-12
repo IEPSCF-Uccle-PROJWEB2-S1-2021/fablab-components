@@ -3,6 +3,40 @@ const router = new express.Router();
 const { body, validationResult } = require('express-validator');
 const createError = require('http-errors');
 
+class ContainerList {
+  constructor() {
+    this.containers = [];
+  }
+
+  add(container) {
+    this.containers.push(container);
+  }
+
+  getAllLocations() {
+    const allLocations = this.containers.map((container) => container.location);
+    const uniqueLocations = [];
+    allLocations.forEach((location) => {
+      if (uniqueLocations.indexOf(location) < 0) {
+        uniqueLocations.push(location);
+      }
+    });
+    uniqueLocations.sort();
+    return uniqueLocations;
+  }
+
+  getAllDrawers() {
+    const allDrawers = this.containers.map((container) => container.drawer);
+    const uniqueDrawers = [];
+    allDrawers.forEach((drawer) => {
+      if (uniqueDrawers.indexOf(drawer) < 0) {
+        uniqueDrawers.push(drawer);
+      }
+    });
+    uniqueDrawers.sort();
+    return uniqueDrawers;
+  }
+}
+
 class Container {
   constructor(location, drawer, id) {
     this.location = location;
@@ -11,7 +45,7 @@ class Container {
   }
 }
 
-const containers = [];
+const containerList = new ContainerList();
 
 router.get('/new', (req, res, next) => {
   res.render('container_form', { title: "Encodage d'un conteneur" });
@@ -33,33 +67,19 @@ router.post(
     const drawer = req.body.drawer;
     const id = req.body.id;
     const newItem = new Container(location, drawer, id);
-    containers.push(newItem);
-    console.log(containers);
+    containerList.add(newItem);
+    console.log(containerList);
     res.redirect('/containers/new');
   }
 );
 
 router.get('/locations', (req, res, next) => {
-  const allLocations = containers.map((container) => container.location);
-  const uniqueLocations = [];
-  allLocations.forEach((location) => {
-    if (uniqueLocations.indexOf(location) < 0) {
-      uniqueLocations.push(location);
-    }
-  });
-  uniqueLocations.sort();
-  res.json(uniqueLocations);
+  const allLocations = containerList.getAllLocations();
+  res.json(allLocations);
 });
 
 router.get('/drawers', (req, res, next) => {
-  const allDrawers = containers.map((container) => container.drawer);
-  const uniqueDrawers = [];
-  allDrawers.forEach((drawer) => {
-    if (uniqueDrawers.indexOf(drawer) < 0) {
-      uniqueDrawers.push(drawer);
-    }
-  });
-  uniqueDrawers.sort();
+  const uniqueDrawers = containerList.getAllDrawers();
   res.json(uniqueDrawers);
 });
 

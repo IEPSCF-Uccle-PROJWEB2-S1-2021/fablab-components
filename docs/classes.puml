@@ -8,6 +8,8 @@ class Item {
 }
 class ContainerList {
   + add(container : Container)
+  + getAllLocations() : String[]
+  + getAllDrawers() : String[]
 }
 class Container {
   -location

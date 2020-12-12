@@ -4,7 +4,8 @@ class Catalog {
   + search(word : String) : Item[]
 }
 class Item {
-  -description
+  -uuid : Number
+  -description : String
 }
 class ContainerList {
   + add(container : Container)
@@ -13,12 +14,15 @@ class ContainerList {
   + search(word : String) : Container[]
 }
 class Container {
-  -location
-  -drawer
-  -id
+  -uuid : Number
+  -location : String
+  -drawer : String
+  -label : String
 }
 class Inventory {
   + modify(item : Item, container : Container, quantity : Number)
+  + findByItem(item : Item) : InventoryLine[]
+  + findByContainer(container : Container) : InventoryLine[]
 }
 class InventoryLine {
   -quantity

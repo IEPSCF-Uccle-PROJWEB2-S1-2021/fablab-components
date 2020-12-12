@@ -1,3 +1,5 @@
+const { v4: uuidv4 } = require('uuid');
+
 class Catalog {
   constructor() {
     this.items = [];
@@ -27,6 +29,7 @@ class Catalog {
 class Item {
   constructor(description) {
     this.description = description;
+    this.uuid = uuidv4();
   }
 }
 

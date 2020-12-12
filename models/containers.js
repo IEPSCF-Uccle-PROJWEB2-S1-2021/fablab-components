@@ -1,3 +1,5 @@
+const { v4: uuidv4 } = require('uuid');
+
 class ContainerList {
   constructor() {
     this.containers = [];
@@ -36,7 +38,7 @@ class ContainerList {
       return (
         container.location.indexOf(word) > -1 ||
         container.drawer.indexOf(word) > -1 ||
-        container.id.indexOf(word) > -1
+        container.label.indexOf(word) > -1
       );
     });
     return matchingContainers;
@@ -44,10 +46,11 @@ class ContainerList {
 }
 
 class Container {
-  constructor(location, drawer, id) {
+  constructor(location, drawer, label) {
     this.location = location;
     this.drawer = drawer;
-    this.id = id;
+    this.label = label;
+    this.uuid = uuidv4();
   }
 }
 

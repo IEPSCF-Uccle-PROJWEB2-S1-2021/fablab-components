@@ -4,8 +4,9 @@ class Catalog {
   + search(word : String) : Item[]
 }
 class Item {
-  -uuid : Number
+  -uuid : String
   -description : String
+  + compareTo(otherItem) : Number
 }
 class ContainerList {
   + add(container : Container)
@@ -14,15 +15,17 @@ class ContainerList {
   + search(word : String) : Container[]
 }
 class Container {
-  -uuid : Number
+  -uuid : String
   -location : String
   -drawer : String
   -label : String
+  + compareTo(otherContainer) : Number
 }
 class Inventory {
   + modify(item : Item, container : Container, quantity : Number)
-  + findByItem(item : Item) : InventoryLine[]
-  + findByContainer(container : Container) : InventoryLine[]
+  + findByItem(itemUuid : String) : InventoryLine[]
+  + findByContainer(containerUuid : String) : InventoryLine[]
+  - getByItemAndContainer(item : Item, container : Container) : InventoryLine
 }
 class InventoryLine {
   -quantity

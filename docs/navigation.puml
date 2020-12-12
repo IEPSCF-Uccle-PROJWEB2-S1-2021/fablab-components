@@ -4,17 +4,17 @@ digraph g {
          ranksep=1];
   node [shape = note];
 
-  home [label="Page d'accueil"];
+  navigation [label="Navigation", shape=rectangle];
   item_form [label="Formulaire article"];
   container_form [label="Formulaire conteneur"];
   item_list [label="Liste articles"];
   container_list [label="Liste conteneurs"];
   inventory_details [label="Détails inventaire"];
 
-  home -> item_form;
-  home -> container_form;
-  home -> item_list;
-  home -> container_list;
+  navigation -> item_form;
+  navigation -> container_form;
+  navigation -> item_list;
+  navigation -> container_list;
   item_list -> inventory_details;
   container_list -> inventory_details;
 }

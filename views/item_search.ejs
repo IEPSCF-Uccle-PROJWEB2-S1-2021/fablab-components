@@ -1,0 +1,39 @@
+<%- include('header'); -%>
+
+<div class="container">
+  <h1><%= title %></h1>
+  <form action="/items/search" method="get" class="row">
+    <div class="col-9">
+      <input type="text" name="search" required class="form-control" id="descriptionInput">
+    </div>
+    <div class="col-3">
+      <button type="submit" class="btn btn-outline-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+          <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+        </svg>
+        Recherche
+      </button>
+    </div>
+  </form>
+  <div class="row">
+    <% if (items.length > 0) { %>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% items.forEach(item => { %>
+            <tr>
+              <td><%= item.description %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } %>
+  </div>
+</div>
+
+<%- include('footer') -%>

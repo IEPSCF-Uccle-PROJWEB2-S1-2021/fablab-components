@@ -13,7 +13,7 @@ class ContainerList {
     const allLocations = this.containers.map((container) => container.location);
     const uniqueLocations = [];
     allLocations.forEach((location) => {
-      if (uniqueLocations.indexOf(location) < 0) {
+      if (!uniqueLocations.includes(location)) {
         uniqueLocations.push(location);
       }
     });
@@ -25,7 +25,7 @@ class ContainerList {
     const allDrawers = this.containers.map((container) => container.drawer);
     const uniqueDrawers = [];
     allDrawers.forEach((drawer) => {
-      if (uniqueDrawers.indexOf(drawer) < 0) {
+      if (!uniqueDrawers.includes(drawer)) {
         uniqueDrawers.push(drawer);
       }
     });
@@ -35,15 +35,16 @@ class ContainerList {
 
   search(word) {
     const matchingContainers = this.containers.filter((container) => {
+      const re = new RegExp(word, 'i');
       return (
-        container.location.indexOf(word) > -1 ||
-        container.drawer.indexOf(word) > -1 ||
-        container.label.indexOf(word) > -1
+        re.test(container.location) ||
+        re.test(container.drawer) ||
+        re.test(container.label)
       );
     });
     matchingContainers.sort((container1, container2) => {
       return container1.compareTo(container2);
-    })
+    });
     return matchingContainers;
   }
 }

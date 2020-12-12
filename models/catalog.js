@@ -11,7 +11,8 @@ class Catalog {
 
   search(search) {
     const matchingItems = this.items.filter((item) => {
-      return item.description.indexOf(search) > -1;
+      const re = new RegExp(search, 'i');
+      return re.test(item.description);
     });
     matchingItems.sort((item1, item2) => {
       return item1.compareTo(item2);

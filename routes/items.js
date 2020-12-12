@@ -5,7 +5,7 @@ const createError = require('http-errors');
 const { Item, catalog } = require('../models/catalog');
 
 router.get('/new', (req, res, next) => {
-  res.render('item_form', { title: "Encodage d'un article" });
+  res.render('item_form', { title: "Nouveau composant" });
 });
 
 router.post(
@@ -33,7 +33,7 @@ router.get(
     if (search !== undefined && search !== '') {
       items = catalog.search(search);
     }
-    res.render('item_search', { title: "Catalogue de composants", items });
+    res.render('item_search', { title: "Catalogue des composants", items });
   }
 );
 

@@ -5,7 +5,7 @@ const createError = require('http-errors');
 const { Container, containerList } = require('../models/containers');
 
 router.get('/new', (req, res, next) => {
-  res.render('container_form', { title: "Encodage d'un conteneur" });
+  res.render('container_form', { title: "Nouveau conteneur" });
 });
 
 router.post(
@@ -50,7 +50,7 @@ router.get(
       containers = containerList.search(word);
     }
     res.render('container_search', {
-      title: 'Liste de conteneurs',
+      title: 'Liste des conteneurs',
       containers,
     });
   }

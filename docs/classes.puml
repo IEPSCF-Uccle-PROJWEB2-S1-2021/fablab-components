@@ -1,17 +1,29 @@
 @startuml classes
-class Catalog
+class Catalog {
+  + add(item : Item)
+  + search(word : String) : Item[]
+}
 class Item {
   -description
+}
+class ContainerList {
+  + add(container : Container)
 }
 class Container {
   -location
   -drawer
   -id
 }
-class ItemInventory {
+class Inventory {
+  + modify(item : Item, container : Container, quantity : Number)
+}
+class InventoryLine {
   -quantity
 }
-Catalog *-- Item
-Container o-- ItemInventory
-ItemInventory -- Item
+
+Catalog *--> Item
+ContainerList *--> Container
+Inventory *--> InventoryLine
+InventoryLine --> Container
+InventoryLine --> Item
 @enduml

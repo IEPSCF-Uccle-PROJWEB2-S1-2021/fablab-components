@@ -1,9 +1,8 @@
 const express = require('express');
 const router = new express.Router();
-const { body, validationResult } = require('express-validator');
+const { body, query, validationResult } = require('express-validator');
 const createError = require('http-errors');
-const {Container, containerList} = require('../models/containers');
-
+const { Container, containerList } = require('../models/containers');
 
 router.get('/new', (req, res, next) => {
   res.render('container_form', { title: "Encodage d'un conteneur" });
@@ -32,13 +31,29 @@ router.post(
 );
 
 router.get('/locations', (req, res, next) => {
-  const allLocations = containerList.getAllLocations();
-  res.json(allLocations);
+  const locations = containerList.getAllLocations();
+  res.json(locations);
 });
 
 router.get('/drawers', (req, res, next) => {
-  const uniqueDrawers = containerList.getAllDrawers();
-  res.json(uniqueDrawers);
+  const drawers = containerList.getAllDrawers();
+  res.json(drawers);
 });
+
+router.get(
+  '/search',
+  [query('search').optional({ checkFalsy: true }).trim().escape()],
+  (req, res, next) => {
+    const word = req.query.search;
+    let containers = [];
+    if (word !== undefined && word !== '') {
+      containers = containerList.search(word);
+    }
+    res.render('container_search', {
+      title: 'Liste de conteneurs',
+      containers,
+    });
+  }
+);
 
 module.exports = router;

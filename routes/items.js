@@ -33,7 +33,7 @@ router.get(
     if (search !== undefined && search !== '') {
       items = catalog.search(search);
     }
-    res.render('item_search', { title: "Catalogue d'articles", items });
+    res.render('item_search', { title: "Catalogue de composants", items });
   }
 );
 

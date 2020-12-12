@@ -10,6 +10,7 @@ class ContainerList {
   + add(container : Container)
   + getAllLocations() : String[]
   + getAllDrawers() : String[]
+  + search(word : String) : Container[]
 }
 class Container {
   -location

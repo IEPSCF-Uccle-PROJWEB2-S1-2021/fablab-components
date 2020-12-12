@@ -30,6 +30,17 @@ class ContainerList {
     uniqueDrawers.sort();
     return uniqueDrawers;
   }
+
+  search(word) {
+    const matchingContainers = this.containers.filter((container) => {
+      return (
+        container.location.indexOf(word) > -1 ||
+        container.drawer.indexOf(word) > -1 ||
+        container.id.indexOf(word) > -1
+      );
+    });
+    return matchingContainers;
+  }
 }
 
 class Container {

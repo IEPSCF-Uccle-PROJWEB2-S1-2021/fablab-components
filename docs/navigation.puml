@@ -11,10 +11,10 @@ digraph g {
   container_list [label="Liste conteneurs"];
   inventory_details [label="Détails inventaire"];
 
-  navigation -> item_form;
-  navigation -> container_form;
   navigation -> item_list;
+  item_list -> item_form;
   navigation -> container_list;
+  container_list -> container_form;
   item_list -> inventory_details;
   container_list -> inventory_details;
 }

@@ -5,7 +5,7 @@
   <form action="/containers" method="post">
     <div class="mb-3">
       <label for="locationInput" class="form-label">Local</label>
-      <input type="text" name="location" list="locationOptions" required class="form-control" id="locationInput">
+      <input type="text" name="location" list="locationOptions" required autofocus class="form-control" id="locationInput">
       <datalist id="locationOptions">
       </datalist>
     </div>
@@ -20,8 +20,8 @@
       <input type="text" name="id" required class="form-control" id="idInput">
     </div>
     <div class="mb-3">
-      <button type="submit" class="btn btn-primary">Ajouter au catalogue</button>
-      <a href="/containers/search" class="btn btn-outline-secondary">Retour au catalogue</a>
+      <button type="submit" class="btn btn-primary">Ajouter à la liste</button>
+      <a href="/containers/search" class="btn btn-outline-secondary">Retour</a>
     </div>
   </form>
 </main>

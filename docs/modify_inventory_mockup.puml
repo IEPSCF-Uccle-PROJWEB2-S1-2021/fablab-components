@@ -1,0 +1,25 @@
+@startsalt modify_item_inventory_mockup
+{
+  = Résistance 50 Ohm
+  {#
+    **Local** | **Armoire** | **Conteneur** | **Quantité** | *
+    Lab | B | 123 | "48" | [<&pencil>]
+    Réserve | D | 344 | "500" | [<&pencil>]
+    ^Lab, A, 123^ | * | * | "   " | [<&plus>]
+  }
+
+}
+@endsalt
+
+@startsalt modify_container_inventory_mockup
+{
+  = Lab, armoire B, conteneur 123
+  {#
+    **Composant** | **Quantité** | *
+    Résistance 50 Ohm | "48" | [<&pencil>]
+    Capacité 100 uF | "500" | [<&pencil>]
+    ^Résistance 100 kOhm^ | "   " | [<&plus>]
+  }
+
+}
+@endsalt

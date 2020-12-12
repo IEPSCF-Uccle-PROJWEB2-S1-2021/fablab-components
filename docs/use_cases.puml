@@ -9,6 +9,7 @@ rectangle "fablab-components" {
   (UC3: Rechercher un article) as UC3
   (UC4: Rechercher un conteneur) as UC4
   (UC5: Modifier l'inventaire d'un conteneur) as UC5
+  (UC6: Modifier l'inventaire d'un composant) as UC6
 }
 
 manager --> UC1
@@ -16,5 +17,6 @@ manager --> UC2
 manager --> UC3
 manager --> UC4
 manager --> UC5
+manager --> UC6
 
 @enduml

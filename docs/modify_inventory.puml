@@ -1,0 +1,11 @@
+@startuml modify_inventory_activity
+start
+:chercher composant ou conteneur;
+:afficher inventaire du composant ou du conteneur;
+if (nouvel emplacement?) then (oui)
+  :afficher une nouvelle ligne d'inventaire;
+else (non)
+endif
+:modifier la ligne d'inventaire;
+stop
+@enduml

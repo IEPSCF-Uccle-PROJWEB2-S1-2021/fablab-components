@@ -55,3 +55,19 @@ Les formulaires, une fois soumis, affiche un nouveau formulaire vide afin de fac
 ## Classes
 
 ![Diagramme de classes](../out/docs/classes/classes.svg)
+
+## Analyse détaillée des use cases de modification d'inventaire (5 et 6)
+
+La modification d'un inventaire suit la même séquence dans les deux cas.
+
+![Diagramme d'activité](../out/docs/modify_inventory/modify_inventory_activity.svg)
+
+Mais les formulaires de consultation et modification de l'inventaire sont différents.
+
+Voici le formulaire d'inventaire d'un composant :
+
+![Mockup inventaire composant](../out/docs/modify_inventory/../modify_inventory_mockup/modify_item_inventory_mockup.svg)
+
+Voici celui d'un conteneur :
+
+![Mockup inventaire conteneur](../out/docs/modify_inventory/../modify_inventory_mockup/modify_container_inventory_mockup.svg)

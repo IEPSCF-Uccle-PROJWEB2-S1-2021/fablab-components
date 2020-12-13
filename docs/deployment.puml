@@ -26,6 +26,7 @@ node Computer <<device>> {
 }
 node "AWS Cloud" {
   node "EC2 instance" {
+    node nginx
     node PM2 {
       node Node.js <<execution environment>> {
         node Express <<application server>> {
@@ -35,5 +36,6 @@ node "AWS Cloud" {
     }
   }
 }
-Browser -- Express : HTTP (TCP :80)
+Browser -- nginx : HTTP (TCP :80)
+nginx -- Express : HTTP (TCP :3000)
 @enduml

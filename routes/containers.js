@@ -1,11 +1,13 @@
 const express = require('express');
 const router = new express.Router();
-const { body, query, validationResult } = require('express-validator');
+const { body, param, query, validationResult } = require('express-validator');
 const createError = require('http-errors');
 const { Container, containerList } = require('../models/containers');
+const { catalog } = require('../models/catalog');
+const inventory = require('../models/inventory');
 
 router.get('/new', (req, res, next) => {
-  res.render('container_form', { title: "Nouveau conteneur" });
+  res.render('container_form', { title: 'Nouveau conteneur' });
 });
 
 router.post(
@@ -53,6 +55,52 @@ router.get(
       title: 'Liste des conteneurs',
       containers,
     });
+  }
+);
+
+router.get('/:uuid', [param('uuid').isUUID(4)], (req, res, next) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return next(createError(400));
+  }
+  try {
+    const inventoryLines = inventory.findByContainer(req.params.uuid);
+    const container = containerList.getByUuid(req.params.uuid);
+    const items = catalog.items;
+    res.render('container_inventory', {
+      title: 'Inventaire du conteneur',
+      inventoryLines,
+      container,
+      items,
+    });
+  } catch (e) {
+    next(e);
+  }
+});
+
+router.post(
+  '/:containerUuid',
+  [
+    param('containerUuid').isUUID(4),
+    body('itemUuid').isUUID(4),
+    body('quantity').isInt({ min: 0 }).toInt(),
+  ],
+  (req, res, next) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return next(createError(400));
+    }
+    try {
+      const containerUuid = req.params.containerUuid;
+      const itemUuid = req.body.itemUuid;
+      const quantity = req.body.quantity;
+      const item = catalog.getByUuid(itemUuid);
+      const container = containerList.getByUuid(containerUuid);
+      inventory.modify(item, container, quantity);
+      res.redirect(`/containers/${containerUuid}`);
+    } catch (e) {
+      next(e);
+    }
   }
 );
 

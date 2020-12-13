@@ -32,9 +32,21 @@
         <tbody>
           <% containers.forEach(container => { %>
             <tr>
-              <td><%= container.location %></td>
-              <td><%= container.drawer %></td>
-              <td><%= container.label %></td>
+              <td>
+                <a href="/containers/<%= container.uuid %>">
+                  <%= container.location %>
+                </a>
+              </td>
+              <td>
+                <a href="/containers/<%= container.uuid %>">
+                  <%= container.drawer %>
+                </a>
+              </td>
+              <td>
+                <a href="/containers/<%= container.uuid %>">
+                  <%= container.label %>
+                </a>
+              </td>
             </tr>
           <% }) %>
         </tbody>

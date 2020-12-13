@@ -71,3 +71,10 @@ Voici le formulaire d'inventaire d'un composant :
 Voici celui d'un conteneur :
 
 ![Mockup inventaire conteneur](../out/docs/modify_inventory/../modify_inventory_mockup/modify_container_inventory_mockup.svg)
+
+## Pistes d'amélioration
+
+* Transformer les drop-downs d'inventaire en utilisant Fetch API.
+* Dans les drop-downs d'inventaire, il faut supprimer les composants ou les conteneurs qui font déjà partie de l'inventaire.
+* Trier les valeurs dans les drop-downs d'inventaire.
+* Afficher l'ensemble des composants du catalogue ou l'ensemble des conteneurs de la liste + pagination.

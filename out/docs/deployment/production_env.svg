@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="487px" preserveAspectRatio="none" style="width:883px;height:487px;" version="1.1" viewBox="0 0 883 487" width="883px" zoomAndPan="magnify"><defs><filter height="300%" id="f1rd8v7vq65npj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[c80fd05985c13756049729d78ea7813f]
+cluster Computer--><polygon fill="#FFFFFF" filter="url(#f1rd8v7vq65npj)" points="16,181,26,171,306,171,306,398,296,408,16,408,16,181" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="296" x2="306" y1="181" y2="171"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="296" y1="181" y2="181"/><line style="stroke:#000000;stroke-width:1.5;" x1="296" x2="296" y1="181" y2="408"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="129" y="198.5332">«device»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69" x="122.5" y="216.1426">Computer</text><!--MD5=[8699c0c8e953ee53654a072cc875bfb4]
+cluster Browser--><polygon fill="#FFFFFF" filter="url(#f1rd8v7vq65npj)" points="48,256,58,246,274,246,274,366,264,376,48,376,48,256" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="264" x2="274" y1="256" y2="246"/><line style="stroke:#000000;stroke-width:1.5;" x1="48" x2="264" y1="256" y2="256"/><line style="stroke:#000000;stroke-width:1.5;" x1="264" x2="264" y1="256" y2="376"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="59" x="127.5" y="273.5332">Browser</text><!--MD5=[929d5cd9b6f7dd857cf22ad0bc8baa87]
+cluster AWS Cloud--><polygon fill="#FFFFFF" filter="url(#f1rd8v7vq65npj)" points="431,16,441,6,866,6,866,470,856,480,431,480,431,16" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="856" x2="866" y1="16" y2="6"/><line style="stroke:#000000;stroke-width:1.5;" x1="431" x2="856" y1="16" y2="16"/><line style="stroke:#000000;stroke-width:1.5;" x1="856" x2="856" y1="16" y2="480"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="76" x="606.5" y="33.5332">AWS Cloud</text><!--MD5=[92d3238ea4bfd3a5f1b1bfed64127829]
+cluster EC2 instance--><polygon fill="#FFFFFF" filter="url(#f1rd8v7vq65npj)" points="455,65,465,55,842,55,842,446,832,456,455,456,455,65" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="832" x2="842" y1="65" y2="55"/><line style="stroke:#000000;stroke-width:1.5;" x1="455" x2="832" y1="65" y2="65"/><line style="stroke:#000000;stroke-width:1.5;" x1="832" x2="832" y1="65" y2="456"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="91" x="599" y="82.5332">EC2 instance</text><!--MD5=[a07f90a0558c49da03311583f1231e3b]
+cluster PM2--><polygon fill="#FFFFFF" filter="url(#f1rd8v7vq65npj)" points="479,114,489,104,818,104,818,422,808,432,479,432,479,114" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="808" x2="818" y1="114" y2="104"/><line style="stroke:#000000;stroke-width:1.5;" x1="479" x2="808" y1="114" y2="114"/><line style="stroke:#000000;stroke-width:1.5;" x1="808" x2="808" y1="114" y2="432"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="30" x="629.5" y="131.5332">PM2</text><!--MD5=[3cca84f111bad6deea36f310946c30e0]
+cluster Node.js--><polygon fill="#FFFFFF" filter="url(#f1rd8v7vq65npj)" points="503,163,513,153,794,153,794,398,784,408,503,408,503,163" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="784" x2="794" y1="163" y2="153"/><line style="stroke:#000000;stroke-width:1.5;" x1="503" x2="784" y1="163" y2="163"/><line style="stroke:#000000;stroke-width:1.5;" x1="784" x2="784" y1="163" y2="408"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="157" x="566" y="180.5332">«execution environment»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="53" x="618" y="198.1426">Node.js</text><!--MD5=[202ed3cfdd71946d549338a391f919b8]
+cluster Express--><polygon fill="#FFFFFF" filter="url(#f1rd8v7vq65npj)" points="535,238,545,228,762,228,762,366,752,376,535,376,535,238" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="752" x2="762" y1="238" y2="228"/><line style="stroke:#000000;stroke-width:1.5;" x1="535" x2="752" y1="238" y2="238"/><line style="stroke:#000000;stroke-width:1.5;" x1="752" x2="752" y1="238" y2="376"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="127" x="581" y="255.5332">«application server»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="57" x="616" y="273.1426">Express</text><!--MD5=[468b56a1d961c08df9de9a0d19ea13c7]
+entity Web application frontend--><polygon fill="#FEFECE" filter="url(#f1rd8v7vq65npj)" points="72,295,72,332.6094,250,332.6094,250,305,240,295,72,295" style="stroke:#000000;stroke-width:1.5;"/><path d="M240,295 L240,305 L250,305 " fill="#FEFECE" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="82" y="319.5332">Web application frontend</text><!--MD5=[4e405c554d24a18ce3d195322008b746]
+entity Web application backend--><polygon fill="#FEFECE" filter="url(#f1rd8v7vq65npj)" points="559,295,559,332.6094,738,332.6094,738,305,728,295,559,295" style="stroke:#000000;stroke-width:1.5;"/><path d="M728,295 L728,305 L738,305 " fill="#FEFECE" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="159" x="569" y="319.5332">Web application backend</text><!--MD5=[fe3752a924a24304dfd194c2f3992c4f]
+link Browser to Express--><path d="M274.0442,368 C274.8451,368 275.6488,368 276.4551,368 C289.356,368 302.9352,368 316.9666,368 C345.0295,368 374.9013,368 404.7725,368 C434.6437,368 464.5145,368 492.5755,368 C506.6061,368 520.1841,368 533.0836,368 C533.4867,368 533.8891,368 534.2909,368 " fill="none" id="Browser-Express" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="91" x="323" y="364.4951">HTTP (TCP :80)</text><!--MD5=[892ebbe312d48fdf88fc27cc01d17ea7]
+@startuml production_env
+left to right direction
+
+node Computer <<device>> {
+  node Browser {
+    file "Web application frontend"
+  }
+}
+node "AWS Cloud" {
+  node "EC2 instance" {
+    node PM2 {
+      node Node.js <<execution environment>> {
+        node Express <<application server>> {
+          file "Web application backend"
+        }
+      }
+    }
+  }
+}
+Browser - - Express : HTTP (TCP :80)
+@enduml
+
+PlantUML version 1.2020.22(Sun Dec 06 10:36:27 CET 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: FR
+--></g></svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="432px" preserveAspectRatio="none" style="width:801px;height:432px;" version="1.1" viewBox="0 0 801 432" width="801px" zoomAndPan="magnify"><defs><filter height="300%" id="f1wnr6sl7cw1ga" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[c80fd05985c13756049729d78ea7813f]
+cluster Computer--><polygon fill="#FFFFFF" filter="url(#f1wnr6sl7cw1ga)" points="16,16,26,6,784,6,784,415,774,425,16,425,16,16" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="774" x2="784" y1="16" y2="6"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="774" y1="16" y2="16"/><line style="stroke:#000000;stroke-width:1.5;" x1="774" x2="774" y1="16" y2="425"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="368" y="33.5332">«device»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69" x="361.5" y="51.1426">Computer</text><!--MD5=[8699c0c8e953ee53654a072cc875bfb4]
+cluster Browser--><polygon fill="#FFFFFF" filter="url(#f1wnr6sl7cw1ga)" points="48,225,58,215,274,215,274,335,264,345,48,345,48,225" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="264" x2="274" y1="225" y2="215"/><line style="stroke:#000000;stroke-width:1.5;" x1="48" x2="264" y1="225" y2="225"/><line style="stroke:#000000;stroke-width:1.5;" x1="264" x2="264" y1="225" y2="345"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="59" x="127.5" y="242.5332">Browser</text><!--MD5=[bfd53311d253f754702a83e04d40cfc1]
+cluster nodemon--><polygon fill="#FFFFFF" filter="url(#f1wnr6sl7cw1ga)" points="421,83,431,73,760,73,760,391,750,401,421,401,421,83" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="750" x2="760" y1="83" y2="73"/><line style="stroke:#000000;stroke-width:1.5;" x1="421" x2="750" y1="83" y2="83"/><line style="stroke:#000000;stroke-width:1.5;" x1="750" x2="750" y1="83" y2="401"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="66" x="553.5" y="100.5332">nodemon</text><!--MD5=[3cca84f111bad6deea36f310946c30e0]
+cluster Node.js--><polygon fill="#FFFFFF" filter="url(#f1wnr6sl7cw1ga)" points="445,132,455,122,736,122,736,367,726,377,445,377,445,132" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="726" x2="736" y1="132" y2="122"/><line style="stroke:#000000;stroke-width:1.5;" x1="445" x2="726" y1="132" y2="132"/><line style="stroke:#000000;stroke-width:1.5;" x1="726" x2="726" y1="132" y2="377"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="157" x="508" y="149.5332">«execution environment»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="53" x="560" y="167.1426">Node.js</text><!--MD5=[202ed3cfdd71946d549338a391f919b8]
+cluster Express--><polygon fill="#FFFFFF" filter="url(#f1wnr6sl7cw1ga)" points="477,207,487,197,704,197,704,335,694,345,477,345,477,207" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="694" x2="704" y1="207" y2="197"/><line style="stroke:#000000;stroke-width:1.5;" x1="477" x2="694" y1="207" y2="207"/><line style="stroke:#000000;stroke-width:1.5;" x1="694" x2="694" y1="207" y2="345"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="127" x="523" y="224.5332">«application server»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="57" x="558" y="242.1426">Express</text><!--MD5=[468b56a1d961c08df9de9a0d19ea13c7]
+entity Web application frontend--><polygon fill="#FEFECE" filter="url(#f1wnr6sl7cw1ga)" points="72,264,72,301.6094,250,301.6094,250,274,240,264,72,264" style="stroke:#000000;stroke-width:1.5;"/><path d="M240,264 L240,274 L250,274 " fill="#FEFECE" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="82" y="288.5332">Web application frontend</text><!--MD5=[4e405c554d24a18ce3d195322008b746]
+entity Web application backend--><polygon fill="#FEFECE" filter="url(#f1wnr6sl7cw1ga)" points="501,264,501,301.6094,680,301.6094,680,274,670,264,501,264" style="stroke:#000000;stroke-width:1.5;"/><path d="M670,264 L670,274 L680,274 " fill="#FEFECE" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="159" x="511" y="288.5332">Web application backend</text><!--MD5=[fe3752a924a24304dfd194c2f3992c4f]
+link Browser to Express--><path d="M275.8016,337 C277.274,337 278.7547,337 280.2431,337 C286.1967,337 292.2747,337 298.4523,337 C323.1627,337 349.4659,337 375.7688,337 C402.0716,337 428.374,337 453.0828,337 C459.26,337 465.3377,337 471.2908,337 C472.7791,337 474.2596,337 475.7319,337 C476.1,337 476.4675,337 476.8346,337 " fill="none" id="Browser-Express" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="105" x="299" y="333.4951">HTTP (TCP :3000)</text><!--MD5=[f011d34ace6f7252421a14eb15ca796e]
+@startuml development_env
+left to right direction
+
+node Computer <<device>> {
+  node Browser {
+    file "Web application frontend"
+  }
+  node nodemon {
+    node Node.js <<execution environment>> {
+      node Express <<application server>> {
+        file "Web application backend"
+      }
+    }
+  }
+}
+Browser - - Express : HTTP (TCP :3000)
+@enduml
+
+PlantUML version 1.2020.22(Sun Dec 06 10:36:27 CET 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: FR
+--></g></svg>

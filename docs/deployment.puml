@@ -1,0 +1,39 @@
+@startuml development_env
+left to right direction
+
+node Computer <<device>> {
+  node Browser {
+    file "Web application frontend"
+  }
+  node nodemon {
+    node Node.js <<execution environment>> {
+      node Express <<application server>> {
+        file "Web application backend"
+      }
+    }
+  }
+}
+Browser -- Express : HTTP (TCP :3000)
+@enduml
+
+@startuml production_env
+left to right direction
+
+node Computer <<device>> {
+  node Browser {
+    file "Web application frontend"
+  }
+}
+node "AWS Cloud" {
+  node "EC2 instance" {
+    node PM2 {
+      node Node.js <<execution environment>> {
+        node Express <<application server>> {
+          file "Web application backend"
+        }
+      }
+    }
+  }
+}
+Browser -- Express : HTTP (TCP :80)
+@enduml

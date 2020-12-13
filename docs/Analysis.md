@@ -72,6 +72,21 @@ Voici celui d'un conteneur :
 
 ![Mockup inventaire conteneur](../out/docs/modify_inventory/../modify_inventory_mockup/modify_container_inventory_mockup.svg)
 
+## Déploiement
+
+### Environnement de développement
+
+![Environnement de développement](../out/docs/deployment/development_env.svg)
+
+En développement, la variable d'environnement `ENV_NODE` vaut `development` et le module `nodemon` permet de redémarrer le serveur à chaque modification de fichiers.
+
+### Environnement de production
+
+![Environnement de production](../out/docs/deployment/production_env.svg)
+
+En production, c'est le module `PM2` qui remplace `nodemon`.
+La variable d'environnement `ENV_NODE` vaut `production`, ce qui va enclencher les comportements décrits sur [le site du serveur applicatif Express](https://expressjs.com/en/advanced/best-practice-performance.html#set-node_env-to-production), notamment une utilisation plus agressive des caches.
+
 ## Pistes d'amélioration
 
 * Transformer les drop-downs d'inventaire en utilisant Fetch API.

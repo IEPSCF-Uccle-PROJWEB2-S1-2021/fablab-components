@@ -87,6 +87,8 @@ En développement, la variable d'environnement `ENV_NODE` vaut `development` et 
 En production, c'est le module `PM2` qui remplace `nodemon`.
 La variable d'environnement `ENV_NODE` vaut `production`, ce qui va enclencher les comportements décrits sur [le site du serveur applicatif Express](https://expressjs.com/en/advanced/best-practice-performance.html#set-node_env-to-production), notamment une utilisation plus agressive des caches.
 
+Un reverse proxy `nginx` reçoit les requêtes sur le port 80 et les transfert vers l'application server sur le port 3000.
+
 ## Pistes d'amélioration
 
 * Transformer les drop-downs d'inventaire en utilisant Fetch API.

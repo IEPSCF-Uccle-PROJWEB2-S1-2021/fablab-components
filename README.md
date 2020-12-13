@@ -19,4 +19,4 @@ Le reste des fichiers sont des fichiers de configuration pour faciliter l'éditi
 * [X] UC3: Rechercher un article
 * [X] UC4: Rechercher un conteneur
 * [ ] UC5: Modifier l'inventaire d'un conteneur
-* [ ] UC6: Modifier l'inventaire d'un article
+* [X] UC6: Modifier l'inventaire d'un article

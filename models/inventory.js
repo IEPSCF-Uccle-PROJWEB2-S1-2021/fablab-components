@@ -56,3 +56,7 @@ class InventoryLine {
     this.quantity = quantity;
   }
 }
+
+const inventory = new Inventory();
+
+module.exports = inventory;

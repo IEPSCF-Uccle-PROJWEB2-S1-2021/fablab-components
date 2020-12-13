@@ -19,6 +19,17 @@ class Catalog {
     });
     return matchingItems;
   }
+
+  getByUuid(uuid) {
+    const matchingItems = this.items.filter((item) => {
+      return item.uuid === uuid;
+    });
+    if (matchingItems.length === 1) {
+      return matchingItems[0];
+    } else {
+      throw new Error('no matching item');
+    }
+  }
 }
 
 class Item {

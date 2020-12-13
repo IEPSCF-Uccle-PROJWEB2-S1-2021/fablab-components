@@ -47,6 +47,17 @@ class ContainerList {
     });
     return matchingContainers;
   }
+
+  getByUuid(uuid) {
+    const matchingContainers = this.containers.filter((container) => {
+      return container.uuid === uuid;
+    });
+    if (matchingContainers.length === 1) {
+      return matchingContainers[0];
+    } else {
+      throw new Error('no matching container');
+    }
+  }
 }
 
 class Container {

@@ -30,7 +30,11 @@
         <tbody>
           <% items.forEach(item => { %>
             <tr>
-              <td><%= item.description %></td>
+              <td>
+                <a href="/items/<%= item.uuid %>">
+                  <%= item.description %>
+                </a>
+              </td>
             </tr>
           <% }) %>
         </tbody>

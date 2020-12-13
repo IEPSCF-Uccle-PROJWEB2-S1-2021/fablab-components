@@ -1,34 +1,37 @@
 @startuml classes
 class Catalog {
   + add(item : Item)
+  + getByUuid(uuid : String) : Item
   + search(word : String) : Item[]
 }
 class Item {
-  -uuid : String
-  -description : String
+  + uuid : String
+  + description : String
   + compareTo(otherItem) : Number
 }
 class ContainerList {
   + add(container : Container)
   + getAllLocations() : String[]
   + getAllDrawers() : String[]
+  + getByUuid(uuid : String) : Container
   + search(word : String) : Container[]
 }
 class Container {
-  -uuid : String
-  -location : String
-  -drawer : String
-  -label : String
+  + uuid : String
+  + location : String
+  + drawer : String
+  + label : String
   + compareTo(otherContainer) : Number
+  + get description() : String
 }
 class Inventory {
-  + modify(item : Item, container : Container, quantity : Number)
   + findByItem(itemUuid : String) : InventoryLine[]
   + findByContainer(containerUuid : String) : InventoryLine[]
+  + modify(item : Item, container : Container, quantity : Number)
   - getByItemAndContainer(item : Item, container : Container) : InventoryLine
 }
 class InventoryLine {
-  -quantity
+  + quantity : Number
 }
 
 Catalog *--> Item
